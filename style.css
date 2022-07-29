@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --soft_red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark_brown: hsl(25, 47%, 15%);
+    --medium_brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very_pale_orange: hsl(33, 100%, 98%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cream);
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+main article {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* First Card */
+/* First Card */
+/* First Card */
+
+.balance {
+    background-color: var(--soft_red);
+    margin-bottom: 8px;
+}
+
+.balance section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+}
+
+.balance img {
+    margin: auto;
+    margin-right: 0;
+    height: 40px;
+}
+
+article h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.balance h3 {
+    color: var(--cream);
+}
+
+.balance p {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 5px;
+    color: var(--very_pale_orange);
+}
+
+/* Second Card */
+/* Second Card */
+/* Second Card */
+
+
+/* Title */
+/* Title */
+
+.card {
+    flex-direction: column;
+    background-color: var(--very_pale_orange);
+    margin-top: 8px;
+}
+
+.card h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark_brown);
+}
+
+/* Chart */
+/* Chart */
+
+.card section {
+    display: flex;
+    width: 100%;
+}
+
+.chart {
+    margin: 20px 0 25px 0;
+    height: 25vh;
+    align-items: flex-end;
+}
+
+.chart figure {
+    display: flex;
+    flex-direction: column;
+    width: 14.28%;
+    height: 25vh;
+    align-items: center;
+    justify-content: end;
+}
+
+.chart figure p {
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    height: 3vh;
+    background-color: var(--dark_brown);
+    color: var(--very_pale_orange);
+    padding: 5px 4px;
+    border-radius: 4px;
+    font-size: 1.8vh;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.chart figure .show-value {
+    visibility: visible;
+}
+
+figure .progress-bar {
+    display: flex;
+    width: 75%;
+    margin: 5px 2px;
+    height: 90%;
+    background-color: var(--soft_red);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+figure .progress-bar:hover {
+    background-color: hsl(10, 98%, 75%);
+}
+
+figure .today {
+    background-color: var(--cyan);
+}
+
+figure .today:hover {
+    background-color: hsl(186, 47%, 70%);
+}
+
+figure figcaption {
+    color: var(--medium_brown);
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* Separation */
+/* Separation */
+
+.card span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--cream);
+}
+
+/* Month Balance */
+/* Month Balance */
+
+.month-balance-container {
+    display: flex;
+    margin-top: 25px;
+    align-items: flex-end;
+}
+
+.month-balance {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.month-balance-container h3 {
+    width: 100%;
+    font-size: 14px;
+    color: var(--medium_brown);
+}
+
+.month-balance p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.month-balance-container .last-month {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.last-month h6 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+}
+
+@media only screen and (min-width: 1200px) {
+    main article {
+        border-radius: 15px;
+        padding: 25px;
+    }
+}
