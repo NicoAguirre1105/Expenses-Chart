@@ -133,10 +133,6 @@ article h3 {
     margin-bottom: 2px;
 }
 
-.chart figure .show-value {
-    visibility: visible;
-}
-
 figure .progress-bar {
     display: flex;
     width: 75%;
